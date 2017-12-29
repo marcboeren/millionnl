@@ -1,0 +1,6 @@
+  
+  RewriteEngine on
+
+  RewriteRule ^(css|file|galleries|img|js|json|logs|res|stories|thudboard|thudboard-cz|thudboard-nl)\/ - [L]
+  RewriteRule ^(favicon\.ico|robots\.txt|mine\.json|apple-touch-icon\.png|apple-touch-icon-precomposed\.png|apple-touch-icon-57x57-precomposed\.png|apple-touch-icon-72x72-precomposed\.png|apple-touch-icon-114x114-precomposed\.png) - [L]
+  RewriteRule (.*) index.html
