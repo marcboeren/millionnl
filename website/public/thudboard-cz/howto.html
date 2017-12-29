@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs">
+<head>
+  <title>NÁVOD K ThudBoard</title>
+  <link rel="stylesheet" href="thudboard.css" type="text/css" />
+</head>
+
+<body>
+<div class="flow">
+<img alt="Thud - The Discworld Boardgame" title="Thud - Zeměplošská desková hra" src="img/thudscroll.gif" width="400" height="120" />
+
+<p class="links">
+<a href="index.html">ThudBoard souhrn</a> | 
+<a href="about.html">o aplikaci ThudBoard</a> | 
+<a href="howto.html"><b>návod k ThudBoard</b></a> | 
+<a href="http://www.million.nl/thudboard-cz/download.html">download</a>
+</p>
+
+<h1>ThudBoard - Manuál</h1>
+
+<h2>Začátky</h2>
+<p>
+<img class="pgf" src="img/rock.gif" alt="Kámen Thud" width="36" height="36"/>
+Používat ThudBoard je velice jednoduché. Jestli potřebuješ číst tenhle text, asi to tak jednoduché není :-)
+</p>
+<p>
+Okno rozdělíme na tři části: hrací deska, seznam tahů a to ostatní.<br />
+</p>
+<p>
+Následující text vychází ze skutečnosti, žes stáhnul, nainstaloval a spustil aplikaci ThudBoard
+a tudíž můžeš tyto tři části vidět přímo před sebou. Jestli ne, podívej se na <a href="img/thudscreen.jpg">náhled</a>.<br/>
+</p>
+
+<h2>Hrací deska</h2>
+<p>
+<img class="illu" alt="Tah figurkou" title="Pro pohyb figurky ji přetáhni levým tlačítkem myši na cílové políčko" src="img/movepiece.gif" width="140" height="140" />
+Prostě figurku "chyť a táhni" na místo, kam ji chceš.
+Když ji "zvedneš" znovu a postavíš ji jinam, je to bráno jako jeden tah.
+Když ji postavíš na původní políčko, tah se nepočítá.
+</p>
+<p>
+Když figurku A pustíš nad figurkou B, figurka B je vyhozena.
+Další možnost, jak vyhodíš figurku, je kliknutí na ni levým tlačítkem myši.
+<i>Nesnaž se</i> vyhodit figurku tak, že ji přetáhneš mimo hrací plochu (nebo mezi ostatní vyhozené figurky),
+protože to nebude fungovat.
+</p>
+<p>
+Tah je potvrzen kliknutím kamkoli na hrací plochu mimo figurky.
+</p>
+<h2>Seznam tahů</h2>
+<p>
+<img class="illu" alt="Aktuálně zvolený tah" src="img/battleline.gif" width="140" height="140" />
+Kliknutím na jakýkoli tah se zobrazí rozložení figurek po tomto tahu. 
+Když v takovém případě táhneš figurkou, můžeš hrát od téhle pozice 'jinou variantu'.
+Nefunguje to, pokud si nad 'linií uložení' (poznáš podle ikonek zámků).
+Jestli chceš pohnout linií uložení, prostě vyber tah, kde ji chceš mít, a hru ulož.
+Po tomto zákroku můžeš provést 'druhou variantu' hry od takového tahu.
+Zvolený tah a tahy před ním jsou ale stále zamčeny.
+Zvýrazněný tah se nazývá 'linie bitvy'.
+</p>
+<p>
+<img class="illu" alt="Prováděný tah je zvýrazněný spolu s liníí bitvy" src="img/moveinprogress.gif" width="140" height="54" />
+Když začneš nový tah, bude zvýrazněn spolu s liniíí bitvy.
+Pokud takový tah potvrdíš všechny tahy, co byly pod linií bitvy budou ztraceny.
+Je to tak trochu jako alternativní budoucnost.
+</p>
+<p>
+<img class="illu" alt="Po kliknutí na název bitvy: výchozí rozložení" src="img/selectname.gif" width="140" height="62" />
+Když klikneš na název bitvy, figurky se vrátí do výchozího rozložení.
+Jestliže má jméno nalevo od sebe bublinku s íčkem, znamená to, že hra má poznámku.
+Jestiže není zobrazena, můžeš ji zobrazit pomocí menu 'Možnosti'.
+</p>
+<p>
+Linky nahoře a dole můžeš použít ke scrollování po Seznamu tahů.
+Pod spodní linkou je textové pole pro poznámku k určitému tahu (pokud je zapnuto).
+Do něj můžeš normálně psát.
+</p>
+<p>
+<img class="illu" alt="Tah" src="img/singleline.gif" width="140" height="27" />
+Jak pozorumět řádku s tahem: první znak udává figirku ('d' jako dwarf=trpaslík, 'T' jako Troll, 'R' jako Rock=Kámen),
+následují soužadnice - výchozí a cílová. Pod tím najdeš vyhozené figurky označené písmenem 'x' (např.: 'xF15').
+Od verze 1.0 jsou trpasliší pohyby ještě označeny číslicí tahu.
+Od verze 1.4 se může pohybovat Kámen, také označen číslicí tahu.
+</p>
+<h2>Kopírování/Vkládání v Seznamu tahů</h2>
+<p>
+<img class="illu" alt="Ikona kopírovat je aktivní, ikona vložit není" src="img/copyicon.gif" width="140" height="47" />
+Kopírování/Vkládání se hodí, pokud hraješ pomocí emailu, ICQ, nebo podobně.
+Kombinace Ctrl+C zkopíruje tah do schránky.<br class="clear" />
+<img class="illu" alt="Ikona vložit je poloaktivní" src="img/pasteicon.gif" width="140" height="71" />
+Kombinace Ctrl+V se bude snažit vložit ze schránky tah pod linii bitvy.
+To se nemusí povést, pokud není tah přípustný.
+Podobně se pracuje pomocí ikonek na linii bitvy.
+Ikona vložit má tři rozbrazení: neaktivní (žadný tah hry Thud není ve schránce),
+poloaktivní (tah nalezen, nelze však zahrát z této pozice),
+nebo aktivní (jestli nejsi v zamčené pozici, můžeš tah zahrát).
+</p>
+<h2>Ostatní</h2>
+<p>
+Ostatní zahrnuje logo a menu nahoře a URL vespod.
+Kliknutím na URL se otevře internetový prohlížeč s oficiální stránkou hry Thud.
+Menu nahoře má čtyři možnosti. Jsou to: 'Soubor',
+'Uložit', 'Možnosti' a 'Pomoc'.
+</p>
+<img alt="Menu Soubor" src="img/filemenu.gif" width="200" height="47" />
+<p>
+Když klikneš na 'Soubor', můžeš zvolit 'nový', 'otevřít', 'uložit jako', nebo
+'uložit rozložení'. Pod touto nabídkou je seznam naposledy otevřených souborů
+(Most Recently Used - MRU) pro rychlé otevření. Funkce položek 'nový', 'otevřít'
+a 'uložit jako' je obvyklá. 'Uložit rozložení' uloží pozice figurek, ne však předcházející tahy,
+do souboru. Probíhající hra ale zůstává neporušená, následně ji můžeš uložit normálně.
+Jestli chceš dohrát rozehranou uloženou hru, normálně ji otevři pomocí nabídky 'Soubor' &gt; 'Nový'.
+</p>
+<p>
+Soubory jsou většinou uloženy ve složce 'battles' která se nachází ve tvém profilu ve složce
+aplikace ThudBoard (mrkni na '~/.thudboard/battles'), ale uložit je můžeš kamkoli.
+</p>
+<p>
+Jestli chceš změnit počet MRU-souborů, proveď úpravu v souboru thudboard.cfg (také v profilu; otevřeš textovým editorem)
+</p>
+<img alt="Možnost Uložit" src="img/quicksavemenu.gif" width="200" height="47" />
+<p>
+Možnost 'Uložit' uloží hru se vším všudy (rozložení, historie, poznámka, ...).
+</p>
+<img alt="Menu Možnosti" src="img/optionsmenu.gif" width="200" height="47" />
+<p>
+Nabídku 'Možnosti' použiješ pro přepínání některých funkcí.
+'Souřadnice' přepíná mezi hrací deskou <i>s</i> a <i>bez</i> vypsaných souřadnic na každém poli.
+'Zvýrazňování' přepíná <i>rosvícení</i> souřadnic na poli pod myší.
+'Score' přepíná mezi zobrazením počtu <i>vyhozených</i> figur a zobrazením počtu <i>zbývajících</i> figur.
+'Poznámka' vypíná a zapíná zobrazení textového pole pro poznámku.
+Všechny možnosti se ti ukládají v profilu a při dalším spuštění aplikace zůstanou tak, jaks je nastavil.
+</p>
+<img alt="Menu Pomoc" src="img/helpmenu.gif" width="200" height="47" />
+<p>
+Toto menu otevírá dokumentaci, kterou právě čteš.
+</p>
+<img alt="Tlačítko zavřít" src="img/quit.gif" width="140" height="42" />
+<p>
+Aplikaci ukončíš tak, jak zavíráš jakékoli okno
+(tj. kliknutí na 'x' ve Windows).
+</p>
+
+<h3>
+Copyright &copy; 2003, 2004, 2005, 2006, 2007 Marc Boeren<br />
+Translation &copy; 2006, 2007 churchyard
+</h3>
+
+<a href="http://validator.w3.org/check/referer"><img src="img/valid-xhtml11.gif" alt="Valid XHTML 1.1!" height="31" width="88" /></a>
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.million.nl/thudboard/thudboard.css"><img src="img/vcss.gif" alt="Valid CSS!" height="31" width="88" /></a>
+
+</div>
+
+</body>
+</html>

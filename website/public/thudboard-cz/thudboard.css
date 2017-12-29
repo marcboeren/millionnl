@@ -1,0 +1,91 @@
+
+body { 
+  border: 0px; 
+  margin: 0px;
+  background: black url(img/bcktile.gif);
+  color: white; 
+  }
+
+img {
+  margin: 4px;
+  }
+
+img.pgf {
+  float: left;
+  }
+
+img.illu {
+  float: right;
+  }
+
+a img {
+  border: 0px;
+  }
+
+h1, h2, p, a, div, li {
+  font-family: Verdana,Arial,Helvetica,sans-serif; 
+  line-height: 1.3em;
+  }
+
+h1 {
+  font-size: 1.2em; 
+  font-weight: bold;
+  }
+
+h2 {
+  font-size: 1em; 
+  font-weight: bold;
+  margin-top: 2em;
+  border-top: 1px dotted white;
+  border-bottom: 1px dotted white;
+  }
+
+h3 {
+  font-size: 0.8em; 
+  font-weight: bold;
+  border-top: 1px dotted white;
+  border-bottom: 1px dotted white;
+  }
+
+h4 {
+  font-size: 0.8em; 
+  font-weight: bold;
+  text-align: justify;
+  }
+
+a {
+  font-size: 1em; 
+  color: white; 
+  background: inherit;
+  }
+
+li { 
+  font-size: 0.8em; 
+  text-align: justify;
+  }
+
+p { 
+  font-size: 0.8em; 
+  text-align: justify;
+  }
+
+p.links { 
+  text-align: center;
+  padding-bottom: 4px;
+  border-bottom: 1px dotted white;
+  }
+
+small { 
+  line-height: 1.2em;
+  }
+
+div.flow {
+  padding: 0.5em;
+  width: 30em;
+  text-align: center; 
+  }
+
+br.clear {
+  clear: right;
+  }
+
