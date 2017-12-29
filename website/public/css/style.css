@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'GoodFootRegular';
+    src: url('goodfoot-webfont.eot');
+    src: url('goodfoot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('goodfoot-webfont.woff') format('woff'),
+         url('goodfoot-webfont.ttf') format('truetype'),
+         url('goodfoot-webfont.svg#GoodFootRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body, div, span,
+h1, h2, h3, p, blockquote, pre,
+code, em, img,
+small, strong, sub, sup, b, i, ol, ul, li,
+table, tbody, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: relative;
+}
+a:hover, a:active { outline: none; }
+
+body { background: #333 url(blackboard.jpg) top center repeat; color: #fff; text-align: center; position: relative; font-family: "AvenirNextCondensed-Regular", "GillSans-Light", Helvetica, sans-serif; font-size: 14px; }
+a { color: #fff; text-decoration: none; }
+a:visited, a:hover, a:active { color: #fff; }
+p { line-height: 1.5; }
+h1 { z-index: 4; padding-top: 0.2em; font-size: 40px; line-height: 1em; }
+h1 { font-family: GoodFootRegular, Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+
+h2 { z-index: 3; padding-top: 0.2em; font-size: 22px; line-height: 1em; }
+h2 { font-family: GoodFootRegular, Helvetica, sans-serif; font-style: normal; font-weight: normal; }
+h2 span.date { font-size: 15px; }
+
+#head { z-index: 3; }
+#content { z-index: 2; overflow-x: hidden; }
+#c { z-index: 1; color: rgba(255,255,255,0.4); font-family: GoodFootRegular, Helvetica, sans-serif; font-size: 15px; }
+#c a, #c a:visited, #c a:active, #c a:hover { color: rgba(255,255,255,0.4); }
+
+.view { position: relative; overflow: hidden; width: 100%; height: 100%; }
+
+.items { white-space: nowrap; height: auto; position: absolute; top: 0; right: 0; padding: 30px 50%; }
+.items .item { float: right; position: relative; white-space: normal; }
+
+.group { width: 170px; position: relative; margin: 0 20px; cursor: pointer;}
+.group img.bck { position: absolute; width: 240px; height: 120%; top: -30px; left: -35px; }
+.group time { color: rgba(255,255,255,0.6); }
+.group p { padding: 3px 5px 0; }
+.group .polaroid a, .group .polaroid a:visited, .group .polaroid a:hover, .group .polaroid a:active { color: #222; }
+
+#content.story { color: #ccc; text-align: left; max-width: 600px; padding: 0 10px; margin: 0 auto; position: relative; }
+.story h2 { color: #fff; text-align: center; margin: 0 auto 15px; }
+.story .block h2 { text-align: left; margin: 1.6em auto 1em;}
+.story img { margin: 0 8px; }
+.story p, .story ul, .story dt { font-size: 16px; line-height: 1.6em; margin-bottom: 1em; clear: both; }
+.story dt { color: #fff; }
+.story a { text-decoration: underline; }
+
+.gallery { text-align: center; position: relative; margin: 0 auto;}
+.gallery .view { margin: 0 auto;}
+.gallery .items { white-space: normal; height: auto; position: relative; padding: 0; margin: 10px 0;}
+.gallery .item { float: left;}
+.gallery .group { margin: 0 10px; }
+
+.galleryphoto { text-align: center; position: relative; }
+.galleryphoto .items { height: auto; position: absolute; top: auto; bottom: 0; right: 0; padding: 0; }
+.galleryphoto .item { float: left; line-height: 1px; }
+
+.polaroid { font-family: GoodFootRegular, Helvetica, sans-serif; font-style: normal; background: #fff; color: #222; font-size: 18px; margin: 5px 0 10px;
+    -webkit-box-shadow:0 1px 5px #000;
+       -moz-box-shadow:0 1px 5px #000;
+            box-shadow:0 1px 5px #000;
+    }
+.polaroid .vignetted { margin: 5px; position: relative; top: 5px; }
+
+.polaroid .vignetted .vignette {
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 10;
+    -webkit-box-shadow:inset 0 0 5px #000;
+       -moz-box-shadow:inset 0 0 5px #000;
+            box-shadow:inset 0 0 5px #000;
+    }
+.polaroid .vignetted img { display: block; z-index: 9; position: relative;}
+.polaroid .vignetted div.img { position: relative;}
+.polaroid .vignetted div.img img.loading { position: absolute; display: block; top: 37px; left: 64px;}
+
+.polaroid .vignetted ::after { content:"\00a0"; position:absolute; z-index:1; top:-1px; left:-1px; right:-1px; bottom:-1px; border:2px solid #fff; }
+
+.selected .polaroid {
+-webkit-transform: rotate(-1.5deg) scale(1.12);
+   -moz-transform: rotate(-1.5deg) scale(1.12);
+    -ms-transform: rotate(-1.5deg) scale(1.12);
+     -o-transform: rotate(-1.5deg) scale(1.12);
+        transform: rotate(-1.5deg) scale(1.12);
+    }
+.ie8 .selected .group .polaroid a { color: #6ad;}
+
+/* portrait, mobile */
+@media screen and (max-device-width: 480px) {
+  h1 { font-size: 30px; line-height: 1em; }
+  #c { font-size: 10px;}
+}
