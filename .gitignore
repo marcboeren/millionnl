@@ -5,3 +5,4 @@ website/public/galleries/*/*.jpg
 /website/public/css/test.css
 /website/public/test.html
 /website/public/js/test.js
+/tools/__pycache__
