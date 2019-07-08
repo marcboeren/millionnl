@@ -6,3 +6,4 @@ website/public/galleries/*/*.jpg
 /website/public/test.html
 /website/public/js/test.js
 /tools/__pycache__
+/tools/gallerytools.pyc
