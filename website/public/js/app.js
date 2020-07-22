@@ -1622,7 +1622,7 @@ function App() {
   app.router = {
     parseUrl: function() {
       var pathname = window.location.pathname;
-      if (pathname.charAt(pathname.length-1) === "/") pathname = pathname.substr(0, -1);
+      if (pathname.charAt(pathname.length-1) === "/") pathname = pathname.substr(0, pathname.length-1);
       var hash = window.location.hash.substr(1);
       if (pathname === "") {
         app.states.home(hash);
