@@ -1,0 +1,6 @@
+
+  RewriteEngine on
+
+  RewriteRule ^(res)\/ - [L]
+  RewriteRule ^(favicon\.ico) - [L]
+  RewriteRule (.*) index.html

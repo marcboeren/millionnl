@@ -1,6 +1,15 @@
-  
-  RewriteEngine on
 
-  RewriteRule ^(css|file|galleries|img|js|json|logs|res|stories|thudboard|thudboard-cz|thudboard-nl)\/ - [L]
-  RewriteRule ^(favicon\.ico|robots\.txt|mine\.json|apple-touch-icon\.png|apple-touch-icon-precomposed\.png|apple-touch-icon-57x57-precomposed\.png|apple-touch-icon-72x72-precomposed\.png|apple-touch-icon-114x114-precomposed\.png) - [L]
-  RewriteRule (.*) index.html
+AddDefaultCharset utf-8
+AddCharset utf-8 .html
+
+RewriteEngine on
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.million.nl/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^million.nl$ [NC]
+RewriteRule (.*) https://www.million.nl/$1 [R=301,L]
+
+RewriteRule ^(css|file|galleries|img|js|json|logs|res|stories|thudboard|thudboard-cz|thudboard-nl)\/ - [L]
+RewriteRule ^(favicon\.ico|robots\.txt|mine\.json|apple-touch-icon\.png|apple-touch-icon-precomposed\.png|apple-touch-icon-57x57-precomposed\.png|apple-touch-icon-72x72-precomposed\.png|apple-touch-icon-114x114-precomposed\.png) - [L]
+RewriteRule (.*) index.html
